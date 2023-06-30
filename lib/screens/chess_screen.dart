@@ -63,6 +63,9 @@ class _ChessScreenState extends State<ChessScreen> {
           if (isInBoard(row + direction, col - 1)) {
             candidateMoves.add([row + direction, col - 1]);
           }
+          if (isInBoard(row + direction, col - 1)) {
+            candidateMoves.add([row + direction, col - 1]);
+          }
         }
         break;
       case ChessPieceType.bishop:
